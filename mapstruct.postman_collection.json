@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "520281e5-57e4-48e8-9b00-9899430d20d7",
+		"name": "mapstruct",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Sample",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sampleDtoName\" : \"Covid-20\",\r\n    \"sampleDate\" : \"2021-03-09\",\r\n    \"reverse\" : true,\r\n    \"comments\" : \"This is a test comment\",\r\n    \"sampleDtoType\" : \"Guinea Pig\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sample/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sample",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get list of samples",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sample/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sample",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
