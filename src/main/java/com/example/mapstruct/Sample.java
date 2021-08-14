@@ -80,6 +80,12 @@ public class Sample {
 	public void setType(String type) {
 		this.type = type;
 	}
+
+	@Override
+	public String toString() {
+		return "Sample [sampleID=" + sampleID + ", sampleName=" + sampleName + ", sampleDate=" + sampleDate
+				+ ", reverse=" + reverse + ", comments=" + comments + ", type=" + type + "]";
+	}
 	
 	
 }
